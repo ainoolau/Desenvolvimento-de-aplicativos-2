@@ -1,0 +1,66 @@
+import 'dart:math' as math;
+
+void main () {
+// variaveis = raio
+var pi = math.pi;
+var raio = 2;
+var area = (raio * raio) * pi;
+print('O valor da area de raio $raio é ${area.toStringAsFixed(4)}');
+
+}
+
+---
+
+2
+
+import 'dart:math' as math;
+
+void main () {
+// sl = salario por hora
+var chapa = 25;
+var horas = 100;
+var sl = 5.50;
+var salario = horas * sl;
+print ('CHAPA: $chapa');
+print('SALARIO: R\$ ${salario.toStringAsFixed(2)}');
+}
+
+---
+
+3
+
+import 'dart:math' as math;
+
+void main () {
+
+var nome = 'João';
+var fixo = 500.00;
+var vendas = 1230.30;
+var salario = fixo + ((vendas / 100) * 15);
+print('$nome receberá R\$ ${salario.toStringAsFixed(2)} esse mês');
+}
+
+---
+
+4 
+
+void main () {
+// var energiaI = energia interna
+var calor = 50;
+var trabalho = 12;
+var energiaI = 100;
+var energia = (calor - trabalho + energiaI);
+print('O resultado é $energia\J');
+}
+
+---
+
+5
+
+import 'dart:math' as math;
+void main () {
+var trabalho = 12;
+var calor = 23;
+var energiaT = (trabalho / calor) * 100;
+print('O resultado é ${energiaT.toStringAsFixed(2)}\%');
+}
