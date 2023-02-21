@@ -1,0 +1,93 @@
+1
+
+void main (){
+int a = 2;
+int b = 3;
+int c = 2;
+int d = 6;
+int somacd = c + d;
+int somaab = a + b;
+if ((b > c && d > a) && (somacd > somaab) && (c > 0 && d > 0 ) && (a % 2 == 0)) {
+print ('valores aceitos');
+} else {
+print  ('valores não aceitos');
+
+}
+}
+
+---
+
+2
+
+void main(){
+var n1 = 2.0;
+var n2 = 4.0;
+var n3 = 7.5;
+var n4 = 8.0;
+var media = (n1 + n2 + n3 + n4) / 4;
+var exame = 6.4;
+var resultado = (media + exame) / 2;
+print ('media: ${media.toStringAsFixed(1)}');
+if (media >= 7.0){
+print ('aluno aprovado');
+} else if (media < 5.0){
+print ('aluno reprovado');
+} else if (media >= 5.0 && media <= 6.9){
+print ('aluno em exame');
+print ('nota do exame: $exame');{
+if (resultado >= 5.0){
+print ('aluno aprovado');
+}else{
+print ('aluno reprovado');}
+print ('media final: ${resultado.toStringAsFixed(1)}');
+}
+}
+}
+
+---
+
+3
+
+void main (){
+var a = 5.8;
+var b = 3;
+var c = 5;
+var ma = (a*a).round();
+var mb = (b*b).round();
+var mc = (c*c).round();
+if (a >= b+c){
+print ('NÃO FORMA TRIANGULO');
+}else if ((ma) == (mb) + (mc)){
+print ('TRIÂNGULO RETÂNGULO.');
+}else if ((ma) > (mb) + (mc)){
+print ('TRIÂNGULO OBTUSÂNGULO');
+}else if ((ma) < (mb) + (mc)){
+print ('TRIÂNGULO ACUTÂNGULO');
+}
+if (a == b && b == c) {
+print("TRIÂNGULO EQUILÁTERO");
+}else if (a == b || a == c || b == c) {
+print("TRIÂNGULO ISÓSCELES");
+
+}
+}
+
+---
+
+4
+
+void main (){
+var jogador1 = 'par';
+var jogador2 = 'impar';
+var valor1 = 3;
+var valor2 = 2;
+var total = valor1 + valor2;
+
+if (total % 2 == 0 && jogador1 == 'par'){
+print ('jogador 1 ganhou');}
+else if (total % 2 != 0 && jogador1 == 'impar'){
+print ('jogador 1 ganhou');}
+else {
+print('jogador 2 ganhou');
+}
+}
